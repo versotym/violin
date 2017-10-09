@@ -13,6 +13,12 @@ methods:
   <b>addSeries(data, name=None)</b>
     data:  list of values
     name:  name of the dataset
+  
+  <b>series_list()</b>
+    returns violin plot series as a list of dicts
+
+  <b>series_json()</b>
+    returns violin plot series in json
 
 </pre>
   
