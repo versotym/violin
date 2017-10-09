@@ -1,4 +1,5 @@
 import numpy as np
+import json
 from sklearn.neighbors.kde import KernelDensity
 
 
@@ -96,3 +97,9 @@ class Violin:
                      str(self.seriesId) + ']',
             'data': d
         }
+
+    def series_list(self):
+        return self.series
+        
+    def series_json(self):
+        return json.dumps(self.series)
