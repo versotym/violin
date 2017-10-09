@@ -5,8 +5,8 @@
 <b>violin.Violin(center='median', box=(25,75), whiskers=(5,95))</b>
 
   <b>center</b>:    which central tendency to display: 'median'|'mean'
-  <b>box</b>:       percentiles indicated by the box: float in range of [0,100]
-  <b>whiskers</b>:  percentiles indicated by the whiskers: float in range of [0,100]
+  <b>box</b>:       percentiles indicated by the box: pair of floats in range of [0,100]
+  <b>whiskers</b>:  percentiles indicated by the whiskers: pair of floats in range of [0,100]
 
 <b>methods:</b>
 
