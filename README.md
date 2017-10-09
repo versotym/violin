@@ -13,7 +13,8 @@
   <b>addSeries(data, name=None)</b>
     data:  list of values
     name:  name of the dataset
-<pre>
+
+</pre>
   
 ## Examples
 Plotting random data with example.py    
