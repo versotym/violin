@@ -9,6 +9,7 @@
   <b>whiskers</b>:  percentiles indicated by the whiskers: float in range of [0,100]
 
 <b>methods:</b>
+
   <b>addSeries(data, name=None)</b>
     data:  list of values
     name:  name of the dataset
