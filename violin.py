@@ -5,7 +5,7 @@ from sklearn.neighbors.kde import KernelDensity
 class Violin:
 
     def __init__(self, center='median',
-                 box=(25, 75), whiskers=(5, 95), step=1):
+                 box=(25, 75), whiskers=(5, 95)):
         self.center = center
         self.box = box
         self.whiskers = whiskers
