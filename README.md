@@ -1,5 +1,5 @@
 # violin
-A simple workaround to produce violin plot with [highcharts.js](http://www.highcharts.js)
+> A simple workaround to produce violin plot with [highcharts.js](http://www.highcharts.js)
 
 ## Examples
 Plotting random data with example.py    
