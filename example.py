@@ -42,6 +42,7 @@ hc.set_options('yAxis', {'categories': dataset_names, 'min': 0,
                          'max': len(dataset_names)-1, 'title': {'text': ''},
                          'gridLineWidth': 0})
 hc.set_options('title', {'text': 'example'})
+hc.set_options('tooltip', {'pointFormat' : '{point.x}'})
 for s in chart.series_list():
     s['supress_errors'] = True   # otherwise setting attr 'linkTo' raise error
     hc.add_data_set(**s)

@@ -37,7 +37,7 @@ class Violin:
 
             },
             'color': 'white',
-            'data': [[c, self.seriesId]]
+            'data': [{'x': c, 'y': self.seriesId, 'name': self.center}]
         }
 
     def _box(self):
@@ -53,7 +53,10 @@ class Violin:
             },
             'lineWidth': 8,
             'color': 'black',
-            'data': [[b[0], self.seriesId], [b[1], self.seriesId]]
+            'data': [{'x': b[0], 'y': self.seriesId,
+                      'name': 'percentile ' + str(self.box[0])},
+                     {'x': b[1], 'y': self.seriesId,
+                      'name': 'percentile ' + str(self.box[1])}]
         }
 
     def _whiskers(self):
@@ -69,7 +72,10 @@ class Violin:
             },
             'lineWidth': 2,
             'color': 'black',
-            'data': [[w[0], self.seriesId], [w[1], self.seriesId]]
+            'data': [{'x': w[0], 'y': self.seriesId,
+                      'name': 'percentile ' + str(self.whiskers[0])},
+                     {'x': w[1], 'y': self.seriesId,
+                      'name': 'percentile ' + str(self.whiskers[1])}]
         }
 
     def _density(self):
@@ -89,6 +95,7 @@ class Violin:
             'id': str(self.seriesId),
             'name': self.seriesName,
             'type': 'areasplinerange',
+            'enableMouseTracking': False,
             'marker': {
                 'symbol': 'circle',
                 'enabled': False
