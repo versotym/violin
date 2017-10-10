@@ -18,7 +18,7 @@ methods:
     returns violin plot series as a list of dicts
 
   <b>series_json()</b>
-    returns violin plot series in json
+    returns violin plot series in JSON
 
 </pre>
   
