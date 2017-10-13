@@ -30,7 +30,7 @@ hc.set_options('title', {'text': 'example'})
 for s in chart.series_list():
     s['supress_errors'] = True   # otherwise setting attr 'linkTo' raise error
     hc.add_data_set(**s)
-hc.save_file(filename='horizontal')
+hc.save_file(filename='example_horizontal')
 
 '''
 Plot vertical chart to file <vertical.html>
@@ -47,4 +47,4 @@ hc.set_options('tooltip', {'pointFormat': '<b>{point.name}</b>: {point.x}',
 for s in chart.series_list():
     s['supress_errors'] = True   # otherwise setting attr 'linkTo' raise error
     hc.add_data_set(**s)
-hc.save_file(filename='vertical')
+hc.save_file(filename='example_vertical')
